@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Enough!</title> 
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<link rel="stylesheet" type='text/css' href="css/jquery.mobile.css" />
+		<link rel="stylesheet" type='text/css' href="css/app.css" />
+
+		<script type='text/javascript' src="js/jquery.js"></script>
+		<script type='text/javascript' src="js/jquery.mobile.js"></script>
+		<script type='text/javascript' src="js/circles.js"></script>
+		<script type='text/javascript' src="js/app.js"></script>
+	</head>
+
+	<body>
+		<div id="pageHome" data-role="page">
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<a href="#popupSobre" data-rel="popup" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-info">Sobre</a>
+				<h1 class="app-title">Enough!</h1>
+			</div>
+			<div data-role="content">
+				<div class="Meters">		
+					<h5>
+						Economia por<br>iluminação! <a href="#popupLight" data-rel="popup" class="ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all">Ajuda!</a>
+					</h5>
+					 
+					<div id="circles-lighting"></div>
+				</div>
+				<div class="Meters">
+					<h5> 
+						Economia por<br>Resfriamento!<a href="#popupTemperature" data-rel="popup" class="ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all">Ajuda!</a>
+					</h5>
+					<div id="circles-temperature"></div>
+				</div>
+				<div class="Meters">
+					<h5> 
+						Nivel de<br>Ruído!<br><a href="#popupSound" data-rel="popup" class="ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all">Ajuda!</a>
+					</h5>
+					
+					<div id="circles-sound"></div>
+				</div>
+				<!--popups-->
+				<div data-role="popup" id="popupLight">
+					<p>Percentual de economia de energia!<div class='dados'>Luminosidade atual: <span id="light"></span></div></p>
+				</div>
+				<div data-role="popup" id="popupTemperature">
+					<p>Percentual de economia por resfriamento!<div class='dados'>Temperatura atual da água: <span id="temperature"></span></div></p>
+				</div>
+				<div data-role="popup" id="popupSound">
+					<p>Se o nível estiver acima de 85db,<br>você deve usar protetor auricular.</p>
+				</div>
+				<div data-role="popup" id="popupSobre" >
+					<div data-role="header">
+				        <h1>Sobre</h1>
+				    </div>
+				    <div data-role="content">
+				        <h2>Desenvolvedor</h2>
+				        <div class="about-desc">
+							<img src="images/developer.png"><div>Diego Bonfim</div>
+							<img src=""><div>diego@diegobonfim.com</div><br>
+							<img src="images/facebook.png"><div>/Diego.JBonfim</div><br>
+							<img src="images/twitter.png"><div>@Diego_88</div><br>
+							<img src="images/skype.png"><div>diegojbonfim</div><br>
+						</div>
+				    </div>					
+				</div>
+				<!--fim das popups-->
+			</div>
+		</div>
+		
+		
+
+	</body>
+</html>
