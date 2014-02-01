@@ -1,8 +1,8 @@
-.Meters{float:left; text-align: center; margin: 0px 10px}
+.Meters{float:left; text-align: center; margin: 0px 10px !important}
 .Meters h5{margin: 20px 0px 10px 0px}
 .circles-number, .circles-text{font-size:22px !important}
 .ui-btn{display: inline-table !important}
-.ui-popup p{text-align: center; !important}
+.ui-popup p{text-align: center !important}
 .dados{text-align: center}
 .ui-header{background: #9CE9AF !important}
 .ui-title{color: #333F58 !important}

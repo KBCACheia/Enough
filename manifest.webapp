@@ -7,11 +7,13 @@
         "url": "http://diegobonfim.com"
     },
     "launch_path": "/app/enough/index.html",
-	"appcache_path": "/app/enough/offline.appcache",
     "installs_allowed_from": ["*"],
     "default_locale": "pt",
     "icons": {
-        "60": "/app/enough/images/Lampada_60.png",
-        "128": "/app/enough/images/Lampada_128.png"
+        "32": "/app/enough/images/lampada_32.png",
+        "60": "/app/enough/images/lampada_60.png",
+        "90": "/app/enough/images/lampada_90.png",
+        "120": "/app/enough/images/lampada_120.png",
+        "128": "/app/enough/images/lampada_128.png"
     }
 }

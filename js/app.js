@@ -55,11 +55,14 @@ $(function(){
 			sound = r.data.sensorData[4].ms.v;
 
 			$('#temperature').html(temperature+'ºC');
-			$('#light').html(500-light+'cd');
+			$('#light').html(light+'cd');
 
 			console.log('Temperatura: '+temperature);
 			console.log('Luminosidade: '+light);
 			console.log('Nível de Ruído: '+sound);
+			if (light>500) {
+				light=500;
+			};
 			Circles.create({
 		    	id:         'circles-lighting',
 			    percentage: 100-(((((500-light)*200)/500)*100)/200),
